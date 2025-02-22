@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.sqlbook": "sql",
+        "*.ndjson": "jsonl",
+        "*.dbclient-js": "javascript",
+        "gerenciador.h": "c",
+        "stdbool.h": "c",
+        "string.h": "c",
+        "cadastrar_livro.h": "c",
+        "utils.h": "c",
+        "time.h": "c",
+        "cadastrar_usuario.h": "c",
+        "pesquisar_usuario.h": "c"
+    }
+}

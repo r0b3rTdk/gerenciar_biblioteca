@@ -1,0 +1,94 @@
+## Projeto para consolidar seus conhecimentos em C: Sistema de Gerenciamento de Biblioteca
+
+Este projeto integrador combina diversos conceitos da linguagem C que você estudou, desde os fundamentos até tópicos mais avançados, proporcionando um desafio completo e uma ótima oportunidade de aprendizado.
+
+## Objetivo
+
+Criar um sistema de gerenciamento de biblioteca que permita:
+
+* Cadastrar livros (título, autor, ISBN, ano de publicação, quantidade disponível).
+* Cadastrar usuários (nome, CPF, endereço).
+* Realizar empréstimos (associar um livro a um usuário, registrar data de empréstimo e devolução).
+* Realizar devoluções (registrar data de devolução).
+* Pesquisar livros por título, autor ou ISBN.
+* Pesquisar usuários por nome ou CPF.
+* Gerar relatórios (livros mais emprestados, usuários com mais empréstimos, etc.).
+* Salvar e carregar dados de arquivos (persistência dos dados).
+
+## Funcionalidades
+
+1.  **Menu principal:**
+    *   Cadastrar livro ****************
+    *   Cadastrar usuário **************
+    *   Realizar empréstimo
+    *   Realizar devolução
+    *   Pesquisar livro
+    *   Pesquisar usuário
+    *   Gerar relatórios
+    *   Salvar dados
+    *   Carregar dados
+    *   Sair
+
+2.  **Cadastro de livros:**
+    *   Solicitar dados do livro (título, autor, ISBN, ano de publicação, quantidade).
+    *   Validar dados (ISBN, ano de publicação).
+    *   Armazenar dados em uma estrutura (struct).
+    *   Utilizar alocação dinâmica para criar um array de livros.
+
+3.  **Cadastro de usuários:**
+    *   Solicitar dados do usuário (nome, CPF, endereço).
+    *   Validar CPF.
+    *   Armazenar dados em uma estrutura (struct).
+    *   Utilizar alocação dinâmica para criar um array de usuários.
+
+4.  **Empréstimos:**
+    *   Pesquisar livro por título ou ISBN.
+    *   Pesquisar usuário por nome ou CPF.
+    *   Verificar disponibilidade do livro.
+    *   Registrar empréstimo (associar livro e usuário, data de empréstimo).
+
+5.  **Devoluções:**
+    *   Pesquisar empréstimo por livro ou usuário.
+    *   Registrar data de devolução.
+    *   Atualizar disponibilidade do livro.
+
+6.  **Pesquisas:**
+    *   Implementar funções de pesquisa para livros e usuários.
+    *   Utilizar diferentes critérios de pesquisa (título, autor, ISBN, nome, CPF).
+
+7.  **Relatórios:**
+    *   Gerar relatórios de livros mais emprestados.
+    *   Gerar relatórios de usuários com mais empréstimos.
+
+8.  **Arquivos:**
+    *   Implementar funções para salvar dados em arquivos.
+    *   Implementar funções para carregar dados de arquivos.
+    *   Utilizar arquivos binários para maior eficiência.
+
+## Recursos
+
+*   **Estruturas (structs)** para representar livros, usuários e empréstimos.
+*   **Alocação dinâmica de memória** para armazenar os dados.
+*   **Funções** para organizar o código em módulos.
+*   **Arrays** para armazenar coleções de livros e usuários.
+*   **Ponteiros** para manipular as estruturas e arrays.
+*   **Arquivos** para salvar e carregar dados.
+*   **Pré-processador** para definir constantes e macros.
+
+## Nível de dificuldade
+
+Este projeto é desafiador, mas recompensa o esforço com um aprendizado profundo da linguagem C. Ao completá-lo, você terá demonstrado domínio dos conceitos essenciais e estará pronto para enfrentar projetos mais complexos.
+
+## Dicas
+
+*   Comece pelo básico: implemente as funcionalidades de cadastro e pesquisa antes de lidar com empréstimos, devoluções e arquivos.
+*   Divida o projeto em módulos: cada funcionalidade pode ser uma função separada.
+*   Teste seu código: utilize diferentes entradas para garantir que o sistema funcione corretamente.
+*   Documente seu código: adicione comentários para explicar o que cada parte do código faz.
+
+## Desafio extra
+
+*   Implementar interface gráfica (utilizando bibliotecas como GTK ou SDL).
+*   Adicionar funcionalidades extras (autenticação de usuários, sistema de reservas).
+
+Lembre-se que este é apenas um guia. Sinta-se à vontade para adaptar o projeto e adicionar suas próprias ideias e funcionalidades. O importante é aprender e se divertir com a linguagem C!
