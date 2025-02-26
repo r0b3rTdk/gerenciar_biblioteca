@@ -93,7 +93,7 @@ void cadastrarLivro(struct livros *livro) {
             livro->ISBN = atoll(sanitizar_isbn); // converte a string para long long
             break; // ISBN válido, sair do loop
         } else {
-            printf("\033[1;32mISBN invalido.\033[0m\n");
+            printf("\033[1;31mISBN invalido.\033[0m\n");
         }
     }
 
@@ -104,7 +104,7 @@ void cadastrarLivro(struct livros *livro) {
         int anoAtual = tm_info->tm_year + 1900; 
         livro->ano_Publicacao = lerNumero("digite o ano de publicacao do livro: ");
         if (livro->ano_Publicacao > anoAtual){
-            printf("\n\033[1;32mano invalido\033[0m");
+            printf("\n\033[1;31mano invalido\033[0m");
         }
         else
             break;

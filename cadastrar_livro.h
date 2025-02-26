@@ -13,6 +13,7 @@ struct livros {
     long long ISBN;
     int ano_Publicacao;
     int quantidade;
+    int disponivel;
 };
 
 void cadastrarLivro(struct livros *livro);

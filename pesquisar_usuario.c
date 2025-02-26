@@ -6,7 +6,7 @@
 void pesquisarUsuario(struct usuarios *usuarios, int num_usuarios) {
     char CPFouNome[100];
 
-    printf("Digite o CPF ou Nome do usuário: ");
+    printf("digite o CPF ou Nome do usuario: ");
     fgets(CPFouNome, 100, stdin);
     CPFouNome[strcspn(CPFouNome, "\n")] = 0; // Remove a quebra de linha
 
@@ -17,7 +17,7 @@ void pesquisarUsuario(struct usuarios *usuarios, int num_usuarios) {
     for (int i = 0; i < num_usuarios; i++) {
         if (usuarios[i].CPF == cpf_input || 
             strcmp(usuarios[i].nome, CPFouNome) == 0) {
-            printf("\033[1;32mUsuario encontrado:\033[0m\n");
+            printf("\n\033[1;32mUsuario encontrado:\033[0m\n");
             printf("Nome: %s\n", usuarios[i].nome);
             printf("CPF: %lld\n", usuarios[i].CPF); 
             printf("Endereco: %s\n", usuarios[i].endereco);

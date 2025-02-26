@@ -22,11 +22,11 @@ Criar um sistema de gerenciamento de biblioteca que permita:
     *   Cadastrar usuário **************
     *   Realizar empréstimo
     *   Realizar devolução
-    *   Pesquisar livro
-    *   Pesquisar usuário
+    *   Pesquisar livro ****************
+    *   Pesquisar usuário **************
     *   Gerar relatórios
-    *   Salvar dados
-    *   Carregar dados
+    *   Salvar dados *******************
+    *   Carregar dados *****************
     *   Sair
 
 2.  **Cadastro de livros:**

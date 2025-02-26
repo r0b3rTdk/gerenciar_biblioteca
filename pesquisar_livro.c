@@ -17,15 +17,15 @@ void pesquisarLivro(struct livros *livro, int num_livros) {
     for (int i = 0; i < num_livros; i++) {
         if (strcmp(livro[i].titulo, pesquisa) == 0 || 
             strcmp(livro[i].autor, pesquisa) == 0 || 
-            livro[i].ISBN == ISBN_input) { // Comparação direta de long long
-            printf("\033[1;32mLivro encontrado:\033[0m\n");
+            livro[i].ISBN == ISBN_input) { 
+            printf("\n\033[1;32mLivro encontrado:\033[0m\n");
             printf("Titulo: %s\n", livro[i].titulo);
             printf("Autor: %s\n", livro[i].autor);
-            printf("ISBN: %lld\n", livro[i].ISBN); // Corrigido para %lld
+            printf("ISBN: %lld\n", livro[i].ISBN); 
             printf("Ano de publicacao: %d\n", livro[i].ano_Publicacao);
             printf("Quantidade: %d\n", livro[i].quantidade);
-            found = 1; // Marca que o livro foi encontrado
-            break; // Sai do loop após encontrar o livro
+            found = 1; 
+            break; 
         }
     }
 

@@ -10,6 +10,9 @@
         "utils.h": "c",
         "time.h": "c",
         "cadastrar_usuario.h": "c",
-        "pesquisar_usuario.h": "c"
+        "pesquisar_usuario.h": "c",
+        "stdio.h": "c",
+        "stdlib.h": "c",
+        "pesquisar_livro.h": "c"
     }
 }
