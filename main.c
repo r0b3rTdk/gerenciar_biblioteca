@@ -1,3 +1,18 @@
+/*
+Autor: Robert Emanuel
+Data finalizacao: 26/02/2025
+Descrição: Sistema de Gerenciamento de Biblioteca em C.
+
+Este projeto é um sistema completo para gerenciar uma biblioteca, permitindo:
+- Cadastro de livros (título, autor, ISBN, ano de publicação, quantidade).
+- Cadastro de usuários (nome, CPF, endereço).
+- Realização de empréstimos e devoluções.
+- Pesquisa de livros e usuários por diferentes critérios.
+- Geração de relatórios (livros mais emprestados, usuários com mais empréstimos).
+- Persistência de dados em arquivos binários.
+
+O código está organizado em módulos, com funções específicas para cada funcionalidade, utilizando estruturas (structs), alocação dinâmica de memória, manipulação de arquivos e boas práticas de programação em C.
+*/
 #include "cadastrar_livro.h"
 #include "cadastrar_usuario.h"
 #include "pesquisar_usuario.h"
