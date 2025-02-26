@@ -10,7 +10,7 @@ void pesquisarLivro(struct livros *livro, int num_livros) {
     fgets(pesquisa, 100, stdin);
     pesquisa[strcspn(pesquisa, "\n")] = 0; 
 
-    // Tente converter a entrada para long long
+    // tente converter a entrada para long long
     long long ISBN_input = strtoll(pesquisa, NULL, 10);
     int found = 0;
 

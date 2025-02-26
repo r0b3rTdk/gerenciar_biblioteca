@@ -2,7 +2,9 @@
 #include "cadastrar_usuario.h"
 #include "pesquisar_usuario.h"
 #include "pesquisar_livro.h"
+#include "emprestimo.h"
 #include "salvar_carregar.h"
+#include "relatorios.h"
 #include "utils.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -13,6 +15,8 @@ int main() {
     int num_livros = 0;
     struct usuarios usuario[100];
     int num_usuarios = 0;
+    struct emprestimo emprestimos[100];
+    int num_emprestimos = 0;
     const char *filename = "dados.bin";
 
     while (1) {
@@ -53,6 +57,16 @@ int main() {
                 cadastrarUsuario(&usuario[num_usuarios]);
                 num_usuarios++;
                 break;
+            case 3:
+                system("cls");
+                printf("\n\033[1;34mRealizar emprestimo\033[0m\n");
+                realizarEmprestimo(usuario, num_usuarios, livro, num_livros, emprestimos, &num_emprestimos);
+                break;
+            case 4:
+                system("cls");
+                printf("\n\033[1;34mRealizar devolucao\033[0m\n");
+                devolverLivro(emprestimos, &num_emprestimos);
+                break;
             case 5:
                 system("cls");
                 printf("\n\033[1;34mPesquisa dos dados do livro\033[0m\n");
@@ -63,12 +77,20 @@ int main() {
                 printf("\n\033[1;34mPesquisa dos dados do usuario\033[0m\n");
                 pesquisarUsuario(usuario, num_usuarios);
                 break;
+            case 7: // Gerar relatórios
+                system("cls");
+                printf("\n\033[1;34mGerar Relatorios\033[0m\n");
+                gerarRelatorioLivrosMaisEmprestados(emprestimos, num_emprestimos, livro, num_livros);
+                gerarRelatorioUsuariosComMaisEmprestimos(emprestimos, num_emprestimos, usuario, num_usuarios);
+                printf("\nPressione qualquer tecla para continuar...\n");
+                getchar();
+                break;
             case 8: // Salvar dados
-                salvarDados(usuario, num_usuarios, livro, num_livros, filename);
+                salvarDados(usuario, num_usuarios, livro, num_livros, emprestimos, num_emprestimos, filename);
                 Sleep(1500);
                 break;
             case 9: // Carregar dados
-                carregarDados(usuario, &num_usuarios, livro, &num_livros, filename);
+                carregarDados(usuario, &num_usuarios, livro, &num_livros, emprestimos, &num_emprestimos, filename);
                 Sleep(1500);
                 break;
             case 0:

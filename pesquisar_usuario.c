@@ -8,9 +8,9 @@ void pesquisarUsuario(struct usuarios *usuarios, int num_usuarios) {
 
     printf("digite o CPF ou Nome do usuario: ");
     fgets(CPFouNome, 100, stdin);
-    CPFouNome[strcspn(CPFouNome, "\n")] = 0; // Remove a quebra de linha
+    CPFouNome[strcspn(CPFouNome, "\n")] = 0;
 
-    // Tente converter a entrada para long long
+    // tenta converter a entrada para long long
     long long cpf_input = strtoll(CPFouNome, NULL, 10);
     int found = 0;
 

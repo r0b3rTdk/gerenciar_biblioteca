@@ -3,11 +3,10 @@
 
 #include "cadastrar_usuario.h"
 #include "cadastrar_livro.h"
+#include "emprestimo.h"
 
-// Função para salvar usuários e livros em um arquivo
-void salvarDados(struct usuarios *usuarios, int num_usuarios, struct livros *livros, int num_livros, const char *filename);
+void salvarDados(struct usuarios *usuarios, int num_usuarios, struct livros *livros, int num_livros, struct emprestimo *emprestimos, int num_emprestimos, const char *filename);
 
-// Função para carregar usuários e livros de um arquivo
-void carregarDados(struct usuarios *usuarios, int *num_usuarios, struct livros *livros, int *num_livros, const char *filename);
+void carregarDados(struct usuarios *usuarios, int *num_usuarios, struct livros *livros, int *num_livros, struct emprestimo *emprestimos, int *num_emprestimos, const char *filename);
 
 #endif

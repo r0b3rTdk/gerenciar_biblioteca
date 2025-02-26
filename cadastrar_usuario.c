@@ -2,7 +2,7 @@
 #include "utils.h"
 #include <ctype.h>
 #include <windows.h>
-// Funcao para validar o CPF
+// funcao para validar o CPF
 int validarCPF(const char *cpf) {
     int soma = 0, resto;
     int digito1, digito2;
@@ -29,7 +29,7 @@ int validarCPF(const char *cpf) {
     // verifica se os digitos verificadores estao corretos
     return (digito1 == (cpf[9] - '0') && digito2 == (cpf[10] - '0'));
 }
-// Função para validar o endereço
+// funcao para validar o endereço
 int validarEndereco(const char *endereco) {
     return strlen(endereco) >= 5;
 }

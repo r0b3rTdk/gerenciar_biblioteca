@@ -20,14 +20,14 @@ Criar um sistema de gerenciamento de biblioteca que permita:
 1.  **Menu principal:**
     *   Cadastrar livro ****************
     *   Cadastrar usuário **************
-    *   Realizar empréstimo
-    *   Realizar devolução
+    *   Realizar empréstimo ************
+    *   Realizar devolução *************
     *   Pesquisar livro ****************
     *   Pesquisar usuário **************
     *   Gerar relatórios
     *   Salvar dados *******************
     *   Carregar dados *****************
-    *   Sair
+    *   Sair ***************************
 
 2.  **Cadastro de livros:**
     *   Solicitar dados do livro (título, autor, ISBN, ano de publicação, quantidade).
