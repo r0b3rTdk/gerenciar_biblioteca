@@ -13,8 +13,8 @@ Este projeto é um sistema completo para gerenciar uma biblioteca, permitindo:
 
 O código está organizado em módulos, com funções específicas para cada funcionalidade, utilizando estruturas (structs), alocação dinâmica de memória, manipulação de arquivos e boas práticas de programação em C.
 */
-#include "cadastrar_livro.h"
 #include "cadastrar_usuario.h"
+#include "cadastrar_livro.h"
 #include "pesquisar_usuario.h"
 #include "pesquisar_livro.h"
 #include "emprestimo.h"

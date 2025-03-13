@@ -1,3 +1,9 @@
+/* 
+** Autor: r0b3rt
+** Funções:
+** - realizarEmprestimo: realiza um empréstimo de um livro para um usuário
+** - devolverLivro: devolve um livro emprestado
+*/
 #include "emprestimo.h"
 #include "pesquisar_livro.h"
 #include "pesquisar_usuario.h"
